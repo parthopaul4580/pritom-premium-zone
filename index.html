@@ -21,8 +21,8 @@
       <nav class="nav-menu" id="navMenu">
         <a href="#home">Home</a>
         <a href="#packages">Packages</a>
-        <a href="#payment">Payment</a>
-        <a href="#order">Order</a>
+        <a href="payment.html" target="_blank">Payment</a>
+        <a href="payment.html" target="_blank">Order</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -279,124 +279,6 @@
           </article>
         </div>
       </div>
-      </div>
-    </section>
-
-    <section class="section dark-section" id="payment">
-      <div class="container">
-        <div class="section-head">
-          <span class="tag">Manual Payment</span>
-          <h2>Payment Information</h2>
-          <p>Payment করার পর Transaction ID order form-এ লিখে submit করুন।</p>
-        </div>
-        <div class="payment-grid">
-          <div class="payment-card">
-            <div class="payment-icon">💳</div>
-            <h3>bKash Personal</h3>
-            <p class="payment-number">01581694019</p>
-            <button class="copy-btn" onclick="copyText('01581694019')">Copy Number</button>
-          </div>
-          <div class="payment-card">
-            <div class="payment-icon">📱</div>
-            <h3>Nagad Personal</h3>
-            <p class="payment-number">01581694019</p>
-            <button class="copy-btn" onclick="copyText('01581694019')">Copy Number</button>
-          </div>
-        </div>
-        <div class="payment-note">
-          <strong>Note:</strong> Payment করার পর অবশ্যই Transaction ID লিখুন। Payment manually verify করা হবে।
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="order">
-      <div class="container">
-        <div class="section-head">
-          <span class="tag">Order</span>
-          <h2>Place Your Order</h2>
-          <p>Product + duration select করলে exact price auto show হবে এবং WhatsApp message-এ যাবে।</p>
-        </div>
-        <div class="order-box">
-          <form id="orderForm">
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="customerName">Customer Name *</label>
-                <input type="text" id="customerName" placeholder="Enter your name" required />
-              </div>
-              <div class="form-group">
-                <label for="customerPhone">Phone / WhatsApp Number *</label>
-                <input type="tel" id="customerPhone" placeholder="01XXXXXXXXX" required />
-              </div>
-              <div class="form-group">
-                <label for="serviceName">Select Package *</label>
-                <select id="serviceName" required>
-                  <option value="">Choose a package</option>
-                  <option value="YouTube+Google One">YouTube+Google One</option>
-                  <option value="Youtube+Gimini Pro">Youtube+Gimini Pro</option>
-                  <option value="ChatGPT Plus">ChatGPT Plus</option>
-                  <option value="Cloud Ai">Cloud Ai</option>
-                  <option value="Google One [5 TB]+ Gimini Pro">Google One [5 TB]+ Gimini Pro</option>
-                  <option value="LM Notebook">LM Notebook</option>
-                  <option value="YouTube Premium[Renewable]">YouTube Premium[Renewable]</option>
-                  <option value="Spotify Premium">Spotify Premium</option>
-                  <option value="Music Premium [Renewable]">Music Premium [Renewable]</option>
-                  <option value="Apple Music">Apple Music</option>
-                  <option value="NetFlix 4k Ultra [TV Plan]">NetFlix 4k Ultra [TV Plan]</option>
-                  <option value="NetFlix 4k Ultra [[Phone/PC/Iso Plan]]">NetFlix 4k Ultra [[Phone/PC/Iso Plan]]</option>
-                  <option value="Amozon Prime Video [Phone/PC/ISO Plan]">Amozon Prime Video [Phone/PC/ISO Plan]</option>
-                  <option value="Bongo BD">Bongo BD</option>
-                  <option value="Hoichoi Premium">Hoichoi Premium</option>
-                  <option value="Amozon Prime Video [TV Plan]">Amozon Prime Video [TV Plan]</option>
-                  <option value="Chorki Premium">Chorki Premium</option>
-                  <option value="Crunchyroll Premium">Crunchyroll Premium</option>
-                  <option value="IP TV [Global]">IP TV [Global]</option>
-                  <option value="Microsoft office 365 With 1 TB Cloud Storage Won Mail">Microsoft office 365 With 1 TB Cloud Storage Won Mail</option>
-                  <option value="CapCut Pro">CapCut Pro</option>
-                  <option value="Canva Pro">Canva Pro</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="duration">Duration *</label>
-                <select id="duration" required>
-                  <option value="">Choose duration</option>
-                  <option value="1 Month">1 Month</option>
-                  <option value="3 Months">3 Months</option>
-                  <option value="6 Months">6 Months</option>
-                  <option value="12 Months">12 Months</option>
-                </select>
-              </div>
-              <div class="form-group full-row">
-                <label for="selectedPrice">Selected Price</label>
-                <input type="text" id="selectedPrice" value="" placeholder="Product + duration select করলে price আসবে" readonly />
-              </div>
-              <div class="form-group full-row">
-                <label for="gmail">Gmail / Account Email</label>
-                <input type="email" id="gmail" placeholder="Enter Gmail if needed" />
-              </div>
-              <div class="form-group">
-                <label for="paymentMethod">Payment Method *</label>
-                <select id="paymentMethod" required>
-                  <option value="bKash Personal - 01581694019">bKash Personal - 01581694019</option>
-                  <option value="Nagad Personal - 01581694019">Nagad Personal - 01581694019</option>
-                  <option value="Payment Not Done Yet">Payment Not Done Yet</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="transactionId">Transaction ID</label>
-                <input type="text" id="transactionId" placeholder="Payment TrxID if paid" />
-              </div>
-              <div class="form-group full-row">
-                <label for="paymentSender">Payment Sender Number</label>
-                <input type="text" id="paymentSender" placeholder="যে number থেকে payment করেছেন" />
-              </div>
-              <div class="form-group full-row">
-                <label for="note">Additional Note</label>
-                <textarea id="note" placeholder="Write your request or extra details"></textarea>
-              </div>
-            </div>
-            <button type="submit" class="btn primary full">Send Order to WhatsApp</button>
-          </form>
-        </div>
       </div>
     </section>
 
